@@ -1,5 +1,10 @@
 import sqlite3
 
+'''
+Код створює клас Database, який використовується для роботи з базою даних SQLite. Він має методи для створення таблиці, 
+вибірки всіх даних, отримання останнього ідентифікатора, вставки нових даних та очищення таблиці.
+'''
+
 class Database:
     def __init__(self, db_name='calculations.db'):
         self.connection = sqlite3.connect(db_name)

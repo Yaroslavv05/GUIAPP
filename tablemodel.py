@@ -1,5 +1,13 @@
 from PySide6.QtCore import QAbstractTableModel, QModelIndex, Qt
 
+
+'''
+Цей клас TableModel є підкласом QAbstractTableModel і використовується для створення моделі таблиці у фреймворку PySide6. 
+У конструкторі він приймає дані для заповнення таблиці (data) і заголовки стовпців (headers). 
+Методи rowCount та columnCount повертають кількість рядків і стовпців у таблиці відповідно. Метод data використовується для отримання даних для певної клітинки таблиці за її індексом, 
+а метод headerData - для отримання заголовків стовпців.
+'''
+
 class TableModel(QAbstractTableModel):
     def __init__(self, data=None, headers=None):
         super().__init__()
